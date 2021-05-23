@@ -1,0 +1,74 @@
+.quotes{
+    position: absolute;
+    top:0;
+    right:0; 
+    
+    
+}
+.quote{
+    width:70%;
+    height:max-content;
+    font-size: 35px;
+    margin-top: 20%;
+    margin-left:15%;
+    margin-bottom:35%;
+    font-family: Times New Roman;
+    opacity:0;
+    transition: opacity .5s ease-out;
+}
+.quote.appear{
+    opacity:1;
+}
+.nick img{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width:400px;
+    opacity: 0;
+    transition: opacity .4s ease-in;
+}
+.nick img.appear{
+    opacity:1;
+}
+footer{
+    position:fixed;
+    left:0;
+    bottom:-1%;
+    margin:0 !important;
+    padding:0 !important;
+    z-index: -1;
+}
+footer img{
+    width:100%;
+    margin:0;
+    margin-left:0;
+    transform-origin: bottom;
+    opacity:0;
+    transform: scale(1,0);
+    transition: transform .8s ease-out;
+}
+footer img.appear{
+    opacity:1;
+    transform: scale(1,1);
+}
+ 
+
+@media screen and (max-width:600px){
+    
+    .quotes{
+        position: absolute;
+        top:10%;
+        
+    }
+    .quote{
+        margin-bottom: 80%;
+    }
+    .nick img{
+        width:50%;
+        
+    }
+    footer img{
+        height:100px;
+    }
+}
+ 

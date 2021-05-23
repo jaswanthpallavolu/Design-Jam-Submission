@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../navbar.css">
+        <link rel="stylesheet" href="../css/carousel.css">
+        <link rel="stylesheet" href="../css/cardstyle.css">
+        
+    </head>
+    <body>
+        <!-- NavBar -->
+        <header>
+            <div class="logo"><a style="text-decoration: none; color:grey;" href="../index.html" >Nick Vujicic</a></div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li ><a  href="./journey.html">Journey</a></li>
+                    <li ><a href="./career.html">Career</a></li>
+                    <li ><a class="active" href="./books.html">Books</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+        <!-- /NavBar -->
+       
+        <div class="carousel">
+            <button style="outline:none" class="carousel_button left_btn is-hidden">
+                <img src="../Assets/R_arrow.png">
+            </button>
+            <button style="outline:none" class="carousel_button right_btn">
+                    <img src="../Assets/R_arrow.png">
+            </button>
+          
+           <div class="carousel_track-container">
+               <ul class="carousel_track">
+                   <li class="carousel_slide current-slide t1">
+                    
+                   </li>
+                   <li class="carousel_slide t2">
+                    
+                   </li>
+                   <li class="carousel_slide t3">
+                    
+                    </li>
+               </ul>
+           </div>
+            
+
+           <div class="carousel_nav">
+               <button style="outline:none" class="carousel_indicator current-slide"></button>
+               <button style="outline:none" class="carousel_indicator"></button>
+               <button style="outline:none" class="carousel_indicator"></button>
+           </div>
+
+        </div>
+
+
+    </body>
+    <script src="../js/data_books.js"></script>
+    <script src="../js/carousel.js"></script>
+
+    <!-- Template -->
+    <script id="image-template" type="text/x-handlebars-template">
+        <div style="display: flex;">
+            {{#each images}}
+            <div class="card"> 
+                <img src="{{src}}">
+                <div class="info">
+                    <h2>{{title}}</h2>
+                    <p>{{about}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+</html>
