@@ -7,6 +7,8 @@ const SetTargetActive = (TargetLink,Activelink) =>{
      
 }
 const change_content = (content) => {
+    var menu = document.getElementById('toggle-menu');
+    menu.checked = false;
     var a = document.getElementById('col-r');
     a.innerHTML = content;
     

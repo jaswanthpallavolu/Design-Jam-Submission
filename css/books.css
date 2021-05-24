@@ -1,0 +1,27 @@
+.corner{
+    position:fixed;
+    bottom:-1%;
+    left:0;
+    z-index:-2;
+}
+.corner img{
+    position:absolute;
+    bottom:-1%;
+    left:0;
+    transform: rotate(180deg);
+}
+.corner .img1{
+    z-index:-1;
+    width:300px;
+    opacity:.6; 
+}
+.corner .img2{
+    z-index:-2;
+    width:400px;
+    opacity:.6;
+}
+.corner .img3{
+    z-index:-3;
+    width:500px; 
+    opacity:.3;
+}
