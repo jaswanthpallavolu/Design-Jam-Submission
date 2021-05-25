@@ -3,18 +3,18 @@
     top:0;
     right:0; 
     display: grid;
+    margin-top:10%;
     grid-template-columns: .5fr minmax(300px, 1fr) .5fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;  
 }
 .quote{
     width:100%;
     height:max-content;
     font-size: 35px;
-    margin-top:30%;
-    margin-bottom:50%;
     font-family: Times New Roman;
     grid-column: 2/3;
     opacity:0;
+    margin-bottom:45%;
     transition: opacity .5s ease-out;
     z-index:-1;
 }
@@ -60,17 +60,12 @@ footer img.appear{
     .quotes{
         position: absolute;
         top:10%;
-        
     }
     .quote{
         margin-bottom: 100%;
     }
     .nick img{
-        width:50%;
-        
-    }
-    footer img{
-        
+        width:50%;   
     }
 }
  
